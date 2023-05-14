@@ -21,7 +21,8 @@
                 <li><a href="#">Community</a></li>
                 <li><a href="#">Special Deals</a></li>
                 <li><a href="#">About US</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a class="register" href="register.html">Register</a></li>
+                <li><a class="login" href="login.html">Log in</a></li>
 
             </ul>
             <i class="bi bi-three-dots"></i>
@@ -30,10 +31,10 @@
             <div class="cont_bx">
                 <h1>The right destination for you and your family</h1>
                 <p>Creative taglines have the capability of capturing the attention of potential customer.</p>
-                <button>Start your search</button>
+                <a href="#offers"><button>Start your search</button></a>
             </div>
             <div class="trip_bx">
-                <div class="search_bx">
+                <!-- <div class="search_bx">
                     <div class="card">
                         <h4>Location <i class="bi bi-caret-down-fill"></i></h4>
                         <input type="text" placeholder="Enter your destination">
@@ -47,8 +48,7 @@
                         <input type="number" placeholder="How many people?">
                     </div>
                     <input type="button" value="Explore Now">
-
-                </div>
+                </div> -->
                 <div class="travel_bx">
                     <h4>Countries to travel</h4>
                     <div class="cards">
@@ -56,7 +56,7 @@
                             <h3>Azerbaijan <img src="azeri.png"></h3>
                             <img src="istockphoto-966910962-612x612.jpg">
                             <div class="btn_city">  
-                                <a href="">Read Now</a>
+                                <a href="https://azerbaijan.travel/">Read Now</a>
                                 <h5>Baku</h5> <br> <span>$470</span>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                             <h3>United State<img src="United state.png"></h3>
                             <img src="images.jpg">
                             <div class="btn_city">  
-                                <a href="">Read Now</a>
+                                <a href="https://www.visittheusa.com/">Read Now</a>
                                 <h5>NewYork</h5> <br> <span>$870</span>
                             </div>
                     </div>
@@ -72,7 +72,7 @@
                         <h3>India<img src="India.png"></h3>
                         <img src="istockphoto-506132444-612x612.jpg">
                         <div class="btn_city">  
-                            <a href="">Read Now</a>
+                            <a href="https://www.makemytrip.com/">Read Now</a>
                             <h5>Mumbai</h5> <br> <span>$460</span>
                         </div>
                 </div>
@@ -80,7 +80,7 @@
                     <h3>Spain<img src="spain.png"></h3>
                     <img src="spain at nigh(1).jpg">
                     <div class="btn_city">  
-                        <a href="">Read Now</a>
+                        <a href="https://www.spain.info/">Read Now</a>
                         <h5>Barcelona</h5> <br> <span>$730</span>
                     </div>
             </div>
@@ -88,7 +88,7 @@
 
         </div>
     </header>
-    <div class="offers"> 
+    <div class="offers" id="offers"> 
         <h1>Best tour package offers for you</h1>
         <p>Choose your next destination</p> 
         <div class="cards">
@@ -149,7 +149,7 @@
             <li>Vietnam</li>
             <li>Egypt</li>
             <h6>Included: Air ticket,Hotel,Breakfast,Tours,Airport Transfer</h6>
-            <button>More Info</button>
+            <a href="https://azerbaijan.travel/"><button>More Info</button></a>
         </div>
         <div class="img_bx"> 
             <img src="k2bvoms91kvb0tfp.jpg">
@@ -160,10 +160,10 @@
      <footer>
         <h2>Subscribe & <br> get special discount</h2>
         <p>Travelling is important as it teaches us a lot of things. You can learn new skills, new languages, new cultures. Moreover, you get to make new friends and try out new foods when you travel to a new place</p>
-        <div class="input"> 
-            <input type="text" placeholder="Enter your email address">
-            <button>Subscribe</button>
-        </div>
+        <div class="input">
+            <input type="text" placeholder="Enter your email address" id="email-input">
+            <button id="subscribe-btn">Subscribe</button>
+          </div>          
         <ul>
             <li>7823 <br> <h6>Years serving travel industry</h6></li>
             <li>6374 <br> <h6>Global <br> Patnership</h6></li>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 
+    <title>Registration Form</title>
+
+    <style type="text/css">
+      /* Center align the form and give it some padding */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #56a8a4;
+      }
+      title{
+        padding-left: 20px;
+      }
+   
+      /* Style the input fields */
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+      }
+
+      /* Style the submit button */
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      /* Add hover effect to the submit button */
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      /* Style the form label */
+      label {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+     .name {
+    
+      color: #45a049;
+     }
+     body a{
+    
+      margin-left: 600px;
+      list-style-type: none;
+      text-decoration: none;
+      color: #426e44;
+     }
+     body ul li{
+      list-style-type: none;
+      font-size: 20px;
+      color: #426e44;
+     }
+     body a .name{
+      margin-left: 590px;
+      text-decoration: none;
+      color: #406441;
+      font-size: 40px;
+      margin-top: -10px;
+     
+     }
+     .reg{
+      color: #406441;
+      margin-left: 570px;
+     }
+   
+    </style>
+    <script>
+      function showRegistrationForm() {
+        var registrationForm = document.getElementById("registration-form");
+        registrationForm.style.display = "block";
+      }
+
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault(); // prevent default form submission behavior
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const email = document.getElementById("email").value;
+        // perform form validation and submit data to server here
+        window.location.href = "login.html";
+      });
+    </script>
+  </head>
+  <body>
+   
+   
+    <a href="index.html"><h1 class="name">My Website</h1></a>
+
+    <ul>
+      <li>
+        <a href="register.html" onclick="showRegistrationForm()">Register</a>
+      </li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <h1 class="reg">Registration Form</h1>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" required />
+
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
